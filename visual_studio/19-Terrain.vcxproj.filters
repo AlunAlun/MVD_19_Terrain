@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\CollisionSystem.cpp" />
+    <ClCompile Include="..\src\DebugSystem.cpp" />
+    <ClCompile Include="..\src\Game.cpp" />
+    <ClCompile Include="..\src\GraphicsSystem.cpp" />
+    <ClCompile Include="..\src\ControlSystem.cpp" />
+    <ClCompile Include="..\src\linmath.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Parsers.cpp" />
+    <ClCompile Include="..\src\ScriptSystem.cpp" />
+    <ClCompile Include="..\src\Shader.cpp" />
+    <ClCompile Include="..\src\imgui.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\imgui_demo.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\imgui_draw.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\imgui_impl_glfw.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\imgui_impl_opengl3.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\imgui_widgets.cpp">
+      <Filter>imGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GUISystem.cpp" />
+    <ClCompile Include="..\src\GraphicsUtilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\CollisionSystem.h" />
+    <ClInclude Include="..\src\Components.h" />
+    <ClInclude Include="..\src\DebugSystem.h" />
+    <ClInclude Include="..\src\EntityComponentStore.h" />
+    <ClInclude Include="..\src\Game.h" />
+    <ClInclude Include="..\src\extern.h" />
+    <ClInclude Include="..\src\GraphicsSystem.h" />
+    <ClInclude Include="..\src\includes.h" />
+    <ClInclude Include="..\src\ControlSystem.h" />
+    <ClInclude Include="..\src\linmath.h" />
+    <ClInclude Include="..\src\Parsers.h" />
+    <ClInclude Include="..\src\ScriptSystem.h" />
+    <ClInclude Include="..\src\Shader.h" />
+    <ClInclude Include="..\src\imconfig.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imgui.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imgui_impl_glfw.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imgui_impl_opengl3.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imgui_internal.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imstb_rectpack.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imstb_textedit.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\imstb_truetype.h">
+      <Filter>imGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GUISystem.h" />
+    <ClInclude Include="..\src\shaders_default.h" />
+    <ClInclude Include="..\src\GraphicsUtilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="imGui">
+      <UniqueIdentifier>{8e942c0b-f6f3-418b-baca-4e8bca96e56e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

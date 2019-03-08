@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\Game.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Shader.cpp" />
+    <ClCompile Include="..\src\Texture.cpp" />
+    <ClCompile Include="..\src\ControlSystem.cpp">
+      <Filter>Engine\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GraphicsSystem.cpp">
+      <Filter>Engine\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\linmath.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Parsers.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DebugSystem.cpp">
+      <Filter>Engine\Systems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Game.h" />
+    <ClInclude Include="..\src\extern.h" />
+    <ClInclude Include="..\src\Shader.h" />
+    <ClInclude Include="..\src\Texture.h" />
+    <ClInclude Include="..\src\ControlSystem.h">
+      <Filter>Engine\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Components.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EntityComponentStore.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GraphicsSystem.h">
+      <Filter>Engine\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\includes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\linmath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Parsers.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DebugSystem.h">
+      <Filter>Engine\Systems</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{14803a7f-db5c-4b53-aba5-cb5f557139d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{7bce97fc-94ca-42b7-b87f-b61dc4ebd715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Systems">
+      <UniqueIdentifier>{92f95bbf-a6e7-4e83-9571-b926a82aa97b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

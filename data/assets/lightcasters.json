@@ -1,0 +1,66 @@
+ {
+  "scene": "light_casters",
+  "directory": "data/assets/",
+  "geometries": [
+    {"name": "floor", "file": "floor_40x40.obj"}
+  ],
+  "textures": [
+    {
+      "name": "blue", 
+      "file" : "block_blue.tga"
+    }
+  ],
+  "shaders": [
+    {
+      "name": "phong",
+      "vertex": "data/shaders/phong.vert",
+      "fragment": "data/shaders/phong.frag"
+    }
+  ],
+  "materials": [
+    {
+      "name": "blue",
+      "shader": "phong",
+      "diffuse_map": "blue"
+    }
+  ],
+  "lights": [
+    {
+      "name": "Light 1",
+      "type": "directional",
+      "direction": [ -1, -1, -1 ],
+      "color": [ 1, 1, 1 ]
+    },
+    {
+      "name": "Light 2",
+      "type": "point",
+      "position": [ -10, 3, -10 ],
+      "color": [ 1, 0, 0 ],
+      "linear_att": 0.09,
+      "quadratic_att": 0.032
+    },
+    {
+      "name": "Light 3",
+      "type": "spot",
+      "position": [ 10, 20, -10 ],
+      "direction": [ 0, -1, 0 ],
+      "color": [ 1, 1, 0 ],
+      "linear_att": 0.022,
+      "quadratic_att": 0.0019,
+      "spot_inner": 20.0,
+      "spot_outer": 30.0
+    }
+  ],
+  "entities":[
+    {
+      "name": "floor",
+      "geometry": "floor",
+      "material": "blue",
+      "transform": {
+        "translate": [0,0,0],
+        "rotate":[0,0,0],
+        "scale":[1,1,1]
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "scene": "reflection",
+  "directory": "data/assets/",
+  "environment": {
+    "texture": "sea_cliffs",
+    "shader": "environment",
+    "geometry": "cubemap"
+  },
+  "geometries": [
+    {"name": "nanosuit", "file": "nanosuit.obj"},
+    {"name": "cubemap", "file": "cubemap.obj"}
+  ],
+  "textures": [
+    {
+      "name": "sea_cliffs", 
+      "files" :[
+      	"skybox/right.tga",
+      	"skybox/left.tga",
+      	"skybox/top.tga",
+      	"skybox/bottom.tga",
+      	"skybox/front.tga",
+      	"skybox/back.tga"
+      ]
+	}
+  ],
+  "shaders": [
+  	{"name": "environment", "vertex": "data/shaders/cubemap.vert", "fragment": "data/shaders/cubemap.frag"},
+  	{"name": "phongambient", "vertex": "data/shaders/phong.vert", "fragment": "data/shaders/phong-ambient-reflection.frag"},
+  	{"name": "reflection", "vertex": "data/shaders/reflection.vert", "fragment": "data/shaders/reflection.frag"}
+  ],
+  "materials": [
+    {
+        "name": "ambient",
+        "shader": "phongambient",
+        "ambient":[0.7,0.7,0.7],
+        "diffuse":[0.7,0.7,0.7],
+        "specular":[0,0,0],
+        "cube_map": "sea_cliffs"
+    },
+    {"name": "reflection", "shader": "reflection", "cube_map":"sea_cliffs"}
+  ],
+  "lights": [
+    {
+      "name": "Light 1",
+      "position": [-100,100,-100],
+      "color": [1,1,1]
+    }
+  ],
+  "cameras": [
+      {
+          "name": "cam1",
+          "position": [15, 14, 24],
+          "direction": [-0.5, -0.08, -0.86],
+          "movement": "free",
+          "fov": 60,
+          "near": 0.01,
+          "far": 10000
+      }
+  ],
+  "entities":[
+    {
+      "name": "ambient",
+      "geometry": "nanosuit",
+      "material": "ambient",
+      "transform": {
+        "translate": [4,0,0],
+        "rotate":[0,0,0],
+        "scale":[1,1,1]
+      }
+    },
+    {
+      "name": "reflect",
+      "geometry": "nanosuit",
+      "material": "reflection",
+      "transform": {
+        "translate": [-4,0,0],
+        "rotate":[0,0,0],
+        "scale":[1,1,1]
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "scene": "reflection",
+  "directory": "data/assets/",
+  "geometries": [
+    {"name": "sphere", "file": "sphere.obj"}
+  ],
+  "textures": [
+    {
+    "name": "blue",
+    "file": "block_blue.tga"
+    }
+  ],
+  "shaders": [
+  	{"name": "phong", "vertex": "data/shaders/phong.vert", "fragment": "data/shaders/phong.frag"}
+  ],
+  "materials": [
+    {
+        "name": "phong",
+        "shader": "phong",
+        "ambient":[0.7,0.7,0.7],
+        "diffuse":[0.7,0.7,0.7],
+        "specular":[0,0,0],
+        "diffuse_texture": "blue"
+    }
+  ],
+  "lights": [
+    {
+      "name": "Light 1",
+      "position": [-100,100,-100],
+      "color": [1,1,1]
+    }
+  ],
+  "entities":[
+    {
+      "name": "sphere",
+      "geometry": "sphere",
+      "material": "phong",
+      "transform": {
+        "translate": [1.5,0,0],
+        "rotate":[0,0,0],
+        "scale":[1,1,1]
+      }
+    }
+  ]
+}

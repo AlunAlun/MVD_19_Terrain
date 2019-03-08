@@ -1,0 +1,79 @@
+# Blender MTL File: 'nanosuit.blend'
+# Material Count: 6
+newmtl Arm
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.940000 0.940000 0.940000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd arm_dif.tga
+map_Bump arm_showroom_ddn.tga
+map_Ks arm_showroom_spec.tga
+
+
+newmtl Body
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.940000 0.940000 0.940000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd body_dif.tga
+map_Bump body_showroom_ddn.tga
+map_Ks body_showroom_spec.tga
+
+
+newmtl Glass
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.940000 0.940000 0.940000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd glass_dif.tga
+map_Bump glass_ddn.tga
+
+
+newmtl Hand
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.940000 0.940000 0.940000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd hand_dif.tga
+map_Bump hand_showroom_ddn.tga
+map_Ks hand_showroom_spec.tga
+
+
+newmtl Helmet
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.940000 0.940000 0.940000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd helmet_diff.tga
+map_Bump helmet_showroom_ddn.tga
+map_Ks helmet_showroom_spec.tga
+
+
+newmtl Leg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.940000 0.940000 0.940000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd leg_dif.tga
+map_Bump leg_showroom_ddn.tga
+map_Ks leg_showroom_spec.tga
+
+
